@@ -30,7 +30,9 @@ function addSpeaker() {
     var sent = $("#namebox").val();
     //I needed an array, so I hacked one in
     speakersList.add({id: nextId(), name: sent});
-    $("#namebox").val('');
+    document.getElementById('namebox').value = "";
+    $('.typeahead').typeahead('setQuery', '');
+    console.log("Should have cleared.");
 }
 
 function removeNextSpeaker() {

@@ -7,21 +7,21 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="main-container">
   <div class="sixteen columns">
     <h1>PARLEY</h1>
-    <h3>MUNSA XVIII</h3>
+    <h3>CTMUN 2018</h3>
     <hr />
   </div>
   <div class="one-third column">
-    <h3>Speaker's List</h3>
+    <h3 id="speakers-list-header">Speaker's List</h3>
     <div id="speakers-list">
       <ul class="list">
       </ul>
       <hr />
     </div>
-    <input id="namebox" class"typeahead" type="text" onSubmit="sendName()"  placeholder="Country Name" />
-    <button  id="add" class="inline" onClick="addSpeaker()">Add</button>
+    <input id="namebox" class="typeahead" type="text" onSubmit="sendName()"  placeholder="Country Name" />
+    <button  id="add" class="inline" onClick="addSpeaker()" type="reset">Add</button>
   </div>
   <div class="two-thirds column">
     <button id="time" class="full-width button" onClick="toggleTimer()">0:00:00</button>

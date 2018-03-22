@@ -63,8 +63,8 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-weight: normal; }
+		font-family: "Bebas Neue", Helvetica, sans-serif;
+		font-weight: bold; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
@@ -267,3 +267,26 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
+
+
+/* Custom Things */
+
+#main-container {
+	margin: 110px auto;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h3 {
+	color: #bf5700;
+}
+
+#speakers-list-header {
+	color: black;
+}
+
+#name {
+	color: #bf5700;
+}
