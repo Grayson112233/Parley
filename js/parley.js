@@ -9,7 +9,9 @@ var options = {
 var values = [];
 
 var speakersList = new List('speakers-list', options, values);
-var currentID = 1;
+// Clear empty item from list: see https://github.com/javve/list.js/issues/343
+speakersList.clear()
+var currentID = 0;
 var timerPosition=0; //number of seconds the timer should display
 var timeLeft=0; //number of seconds the timer should run, resets to this value after timeout
 var timereg=/^(([0-5])?\d:)?\d\d\s*$/; //i had a problem, so I used a regex. now it's the next guy's problem
@@ -23,7 +25,7 @@ $(document).ready(function () {
 
 function nextId() {
     currentID += 1;
-    return currentID - 1;
+    return currentID;
 }
 
 function addSpeaker() {
@@ -32,7 +34,7 @@ function addSpeaker() {
     speakersList.add({id: nextId(), name: sent});
     document.getElementById('namebox').value = "";
     $('.typeahead').typeahead('setQuery', '');
-    console.log("Should have cleared.");
+    console.log(speakersList);
 }
 
 function removeNextSpeaker() {

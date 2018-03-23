@@ -59,3 +59,11 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+

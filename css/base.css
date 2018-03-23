@@ -294,4 +294,10 @@ h3 {
 .id, .name {
 	display: inline;
 	padding-right: 20px;
+	font-weight: normal;
+	/*font-family: "Roboto";*/
+}
+
+.separator {
+	margin: 10px 0px !important;
 }
