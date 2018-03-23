@@ -3,7 +3,7 @@
 
 //TODO kill this
 var options = {
-    item: '<li><hr class="separator" /></h4><p class="id"><h4 class="name"></p></li>'
+    item: '<div><hr class="separator" /><li></h4><p class="id"><h4 class="name"></p></li></div>'
 };
 
 var values = [];
@@ -34,7 +34,6 @@ function addSpeaker() {
     speakersList.add({id: nextId(), name: sent});
     document.getElementById('namebox').value = "";
     $('.typeahead').typeahead('setQuery', '');
-    console.log(speakersList);
 }
 
 function removeNextSpeaker() {
@@ -122,7 +121,7 @@ function setTimer() {
         timeLeft = input;
     }
     else {
-        alert("stahp"); //add a visual bell
+        alert("You messed up."); //add a visual bell
     }
     $("#timebox").val('');
     console.log("timeLeft: " + timeLeft);

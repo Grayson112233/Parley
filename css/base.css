@@ -288,7 +288,8 @@ h3 {
 }
 
 .name {
-	color: #bf5700;
+	color: black;
+	font-size: 30px;
 }
 
 .id, .name {
@@ -298,6 +299,16 @@ h3 {
 	/*font-family: "Roboto";*/
 }
 
+li {
+	padding: 20px;
+	margin-bottom: 0px;
+}
+
 .separator {
-	margin: 10px 0px !important;
+	margin: 0px;
+}
+
+#time {
+	font-family: "Bebas Neue" !important;
+	padding-top: 20px; /* Top padding is to make up for font error */
 }
