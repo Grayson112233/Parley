@@ -287,6 +287,11 @@ h3 {
 	color: black;
 }
 
-#name {
+.name {
 	color: #bf5700;
+}
+
+.id, .name {
+	display: inline;
+	padding-right: 20px;
 }

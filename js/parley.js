@@ -3,7 +3,7 @@
 
 //TODO kill this
 var options = {
-    item: '<li><hr class="separator" /><h4 class="name"></h4><p class="id"></p></li>'
+    item: '<li><hr class="separator" /></h4><p class="id"><h4 class="name"></p></li>'
 };
 
 var values = [];
