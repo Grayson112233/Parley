@@ -299,6 +299,10 @@ h3 {
 	/*font-family: "Roboto";*/
 }
 
+.delete {
+	display: inline;
+}
+
 li {
 	padding: 20px;
 	margin-bottom: 0px;
@@ -308,7 +312,13 @@ li {
 	margin: 0px;
 }
 
-#time {
+button[id*='time'] {
 	font-family: "Bebas Neue" !important;
 	padding-top: 20px; /* Top padding is to make up for font error */
+	font-size: 80px;
+}
+
+button[id*='set'], input[id*='timebox'] {
+	display: inline;
+	margin-right: 15px;
 }

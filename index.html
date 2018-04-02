@@ -14,6 +14,7 @@
     <hr />
   </div>
   <div class="one-third column">
+
     <h3 id="speakers-list-header">Speaker's List</h3>
     <div id="speakers-list">
       <ul class="list">
@@ -22,11 +23,18 @@
     </div>
     <input id="namebox" class="typeahead" type="text" onSubmit="sendName()"  placeholder="Country Name" />
     <button  id="add" class="inline" onClick="addSpeaker()" type="reset">Add</button>
+
   </div>
   <div class="two-thirds column">
-    <button id="time" class="full-width button" onClick="toggleTimer()">0:00:00</button>
-    <input id="timebox" type="text" onSubmit="setTimer()" placeholder="Time in Seconds" />
-    <button  id="set" class="inline" onClick="setTimer()">Set</button>
+
+    <button id="time1" class="full-width button" onClick="timer1.toggle()">00:00:00</button>
+    <input  id="timebox1" type="text" onSubmit="timer1.set()" placeholder="Time in Seconds" />
+    <button id="set1" class="inline" onClick="timer1.set()">Set</button>
+
+    <button id="time2" class="full-width button" onClick="timer2.toggle()">00:00:00</button>
+    <input  id="timebox2" type="text" onSubmit="timer2.set()" placeholder="Time in Minutes" />
+    <button id="set2" class="inline" onClick="timer2.set()">Set</button>
+
   </div>
 </div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
