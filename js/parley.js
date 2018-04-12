@@ -158,3 +158,8 @@ $("#namebox").on("keydown", function(event) {
 var timer1 = new Timer(1, 'seconds');
 var timer2 = new Timer(2, 'minutes');
 
+
+function togglePopup() {
+    var popup = document.getElementById("popup");
+    popup.classList.toggle("show");
+}
