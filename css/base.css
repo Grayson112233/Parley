@@ -310,6 +310,7 @@ p[class="remove"] {
 	float: right;
 	position: relative;
 	top: 3px;
+	cursor: pointer;
 }
 
 .id-div, .name-div, .remove-div {
@@ -376,7 +377,7 @@ input[type='text'] {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -300px;
+    margin-left: -250px;
 }
 
 /* Toggle this class - hide and show the popup */
