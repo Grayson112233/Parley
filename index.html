@@ -12,7 +12,10 @@
     <h1>PARLEY</h1>
     <h3 id="subheader">CTMUN 2018</h3>
     <div id="help" class="popup" onclick="togglePopup()">How To Use
-      <span class="popuptext" id="popup">A Simple Popup!</span>
+      <span class="popuptext" id="popup">
+        <p>Click a timer while it's running to pause it.</p>
+        <p>Click a timer after it's done to reset it.</p>
+      </span>
     </div>
     <hr />
   </div>
@@ -32,11 +35,13 @@
 
     <button id="time1" class="full-width button" onClick="timer1.toggle()">00:00:00</button>
     <input  id="timebox1" type="text" onSubmit="timer1.set()" placeholder="Time in Seconds" />
-    <button id="set1" class="inline" onClick="timer1.set()">Set</button>
+    <button id="set1" onClick="timer1.set()">Set</button>
+    <button id="reset1" onClick="timer1.reset()">Reset</button>
 
     <button id="time2" class="full-width button" onClick="timer2.toggle()">00:00:00</button>
     <input  id="timebox2" type="text" onSubmit="timer2.set()" placeholder="Time in Minutes" />
-    <button id="set2" class="inline" onClick="timer2.set()">Set</button>
+    <button id="set2" onClick="timer2.set()">Set</button>
+    <button id="reset2" onClick="timer2.reset()">Reset</button>
 
   </div>
 </div>

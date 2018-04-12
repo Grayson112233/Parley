@@ -68,6 +68,8 @@ class Timer {
     reset() {
         this.currentTime = this.lastSetTime;
         this.endTicker();
+        // Update visual timer
+        $("#time" + this.id).html(formatSeconds(this.currentTime));
     }
     // Set the timer according to its type
     set() {
