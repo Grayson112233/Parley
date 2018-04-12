@@ -287,9 +287,15 @@ h3 {
 	color: black;
 }
 
+.id {
+	position: relative;
+	top: -5px;
+}
+
 .name {
 	color: black;
 	font-size: 30px;
+	max-width: 100%;
 }
 
 .id, .name {
@@ -299,12 +305,20 @@ h3 {
 	/*font-family: "Roboto";*/
 }
 
-.delete {
-	display: inline;
+p[class="remove"] {
+	margin: 0px;
+	float: right;
+	position: relative;
+	top: 3px;
+}
+
+.id-div, .name-div, .remove-div {
+	display: inline-block;
 }
 
 li {
 	padding: 20px;
+	padding-bottom: 15px;
 	margin-bottom: 0px;
 }
 
@@ -325,10 +339,6 @@ button[id*='set'], input[id*='timebox'] {
 
 input[type='text'] {
 	box-sizing: content-box;
-}
-
-button[class="remove"] {
-	margin: 0px;
 }
 
 #help {

@@ -18,7 +18,7 @@ $(document).ready(function () {
 var values = [];
 var list_options = {
     valueNames: ['id', 'name', 'id2'],
-    item: '<div><hr class="separator" /><li><p class="id"></p><h4 class="name"></h4><button type="button" class="remove" onclick="removeSpeaker(this)">Remove</button></li></div>'
+    item: '<div><hr class="separator" /><li><p class="id"></p><h4 class="name"></h4><p class="remove" onclick="removeSpeaker(this)">❌</p></li></div>'
 };
 var speakersList = new List('speakers-list', list_options, values);
 var lastID = 0;
